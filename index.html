@@ -1,94 +1,130 @@
-<!doctype html>
-<html lang="es">
+<!doctype html> <!--Doc en html-->
+<html lang="es"> <!--Doc en español-->
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Página Ciudadano Básica</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background: #f5f5f5;
-      color: #222;
-    }
-    header, footer {
-      text-align: center;
-      padding: 10px;
-      background: #0b7285;
-      color: white;
-      border-radius: 8px;
-    }
-    main {
-      background: white;
-      padding: 15px;
-      border-radius: 10px;
-      max-width: 600px;
-      margin: 20px auto;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      text-align: justify;
-    }
-    img, iframe {
-      max-width: 100%;
-      border-radius: 8px;
-      display: block;
-      margin: auto;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 14px;
-      background: #0b7285;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-    }
-  </style>
+ <meta charset="UTF-8"> <!--codifica caracteres-->
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <script src="oscar.js"></script> <!--Ajusta el diseño a móviles-->
+ <title>GUIA DIGITAL CIUDADANA</title> <!--Título que aparece en la pestaña -->
+ <style>
+   body{
+     margin: 0; /* Elimina márgenes por defecto */
+     font-family: Arial, sans-serif; /* Fuente del texto */
+   }
+   /* ---- ESTILO DEL MENÚ PRINCIPAL ---- */
+   nav {
+   	background: #3498DB; /* Fondo gris oscuro */
+   }
+   nav ul {
+   	 list-style: none; /* Quita viñetas de la lista */
+   	 margin: 0; /* Elimina márgenes */
+   	 padding: 0; /* Elimina relleno */
+   	 display: flex; /* Coloca los <li> en linea (horizontal) */
+   }
+   nav ul li {
+   	 position: relative; /* Necesario para posicionar el submenú debajo */
+   }
+   nav ul li a {
+   	 display: block; /* Hace que todo el área sea clickeable */
+   	 padding: 15px 20px; /* Espaciado interno */
+   	 color: white; /* Texto blanco */
+   	 text-decoration: none; /*Quita lo subrayado*/
+   }
+   nav ul li a:hover {
+   	background: #FFC300; /* Cambia el fondo al pasar el raton */
+   }
+
+    /* ----Estilo del submenú----*/
+    nav ul li ul {
+    	display: none;       /*Ocultar el submenu por defecto */
+    	position: absolute;  /*Posiciona el submenu relativo al padre */
+    	top: 100%;           /*Lo coloca justo debajo del elemento padre*/
+    	left: 0;             /*Alineado a la izquierda*/
+    	background: gray;    /*Fondo de submenu*/
+    	padding: 0;          /*Sin espacio interno*/
+    	min-width: 300px;        /*Ancho minimo del submenu*/
+    	}
+    		nav ul li ul li a {
+    			padding: 10px 15px; /* Espaciado interno en las opciones */
+    	}
+    	nav ul li ul li a:hover {
+    		background: #FF5733;    /*Color mas claro al pasar el raton */
+    	}
+
+    	/* ---- MOSTRAR EL SUBMENU ---- */
+    	nav ul li:hover > ul {
+    		display: block; /* Cuando paso el raton sobre el <li>, muestra el submenu*/
+    	}
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Ciudadano - SECCIÓN 1</h1>
-  </header>
+	<!--Menú principal-->
+	<nav>
+		<ul>
+			<!--Elemento simple sin submenú-->
+			<li>
+				    <img src="cecytem2.png" width="80" height="110" align="center">
+			</li>
 
-  <header>
-    <h1>Ciudadano - SECCIÓN 2</h1>
-  </header>
-
-  <main>
-    <h2>CIUDADANO...</h2>
-
-   <img src="ciudadano2.png" alt="Imagen del ciudadano">
-   <img src="tr2.png" alt="Imagen del ciudadano">
-    <p>
-      La participación ciudadana es uno de los pilares fundamentales de toda sociedad democrática. 
-      A través de ella, las personas pueden influir en las decisiones públicas, expresar sus opiniones 
-      y contribuir a la mejora de su comunidad. Participar no se limita al voto; también incluye el diálogo, 
-      la colaboración en proyectos sociales y la vigilancia de la gestión pública. 
-      Fomentar la participación desde la escuela y la familia fortalece la cultura cívica 
-      y promueve una sociedad más justa y responsable.
-    </p>
-
-    <h2>Video informativo</h2>
-
-    <!-- Video desde Google Drive -->
-    <iframe src="https://drive.google.com/file/d/1RZGn1exEzVRpIlT90DCpiEJrS5y4hzOb/preview"
-            width="640" height="360" allow="autoplay; encrypted-media"
-            title="Video desde Google Drive">
-    </iframe>
-
-    <h2>Descargar archivo</h2>
-
-    <!-- Enlace de descarga desde Google Drive -->
-    <a class="btn" href="https://drive.google.com/uc?export=download&id=1WyIAo-0fYs4TnJiTpT5A6GA7fwtTQOIT" target="_blank">
-      Descargar archivo
-    </a>
-  </main>
-  <header>
-    <h1>Ciudadano - SECCIÓN 2</h1>
-  </header>
-
-  <footer>
-    <p>© 2025 Ciudadano Ejemplar</p>
-  </footer>
-</body>
-</html>
+<ul>
+				<li>
+					<p><form method="get" action="https://www.google.com/search" target="_blank">
+						<input type="search" name="q" placeholder="Introducir busqueda" autofocus required>
+						<input type="submit">
+					</form></p>
+				</li>
+			</ul>
+			<!--Elemento con submenú-->
+			<li>
+			  <p><a href="ciudadano.html">CIUDADANO</a></p> <!--Flecha indicando submenú--> 
+			  
+			</li>
+			<li>
+			  <p><a href="ciudadano.html">INFORMACION</a></p> <!--Flecha indicando submenú--> 
+			  
+			</li>
+			<li>
+			  <p><a href="tramite.html">TRAMITE</a></p> <!--Flecha indicando submenú--> 
+			  <ul>
+       <li> <p><a href="tramites.html">ADMINISTRATIVOS</a></p> </li> <!--Flecha indicando submenú--> 
+			 <li> <p><a href="GESTIONAR TRAMITE.html">GESTION TRAMITE</a></p> </li>
+		  </ul>
+			</li>
+			<li> 
+				<p><a href="solicitud.html">SOLICITUD</a></p>
+		
+			</li>
+			<li>
+			  <p><a href="pago.html">PAGO</a></p> <!--Flecha indicando submenú--> 
+			  <ul>
+       <li> <p><a href="PAGOS.html">SERVICIOS Y DERECHOS</a></p> </li> 
+     </ul>
+			</li>
+			 <li> 
+		  <p><a href="documentos.html">DOCUMENTO</a></p> <!--Flecha indicando submenú-->
+			 <ul>
+       <li> <p><a href="galeria.html">GALERIAS</a></p> </li> <!--Flecha indicando submenú--> 
+			 <li> <p><a href="#">----</a></p> </li>
+       <li> <p><a href="#">----</a></p> </li>
+		  </ul>
+		   </li>
+		   <li>
+			  <p><a href="#">VISITANTES</a></p> <!--Flecha indicando submenú--> 
+			
+			  <li>
+       <li> <p><a href="index2.php">REGISTRO DE VISITAS</a></p> 
+       </li>
+       	  <li>
+		<img src="interrogacion.png" width="80" height="110">
+    </li>
+   <li>
+			  <p><a href="informacion1.html">INFORMACION</a></p> <!--Flecha indicando submenú--> 
+			  
+			</li>
+     </ul>
+		</nav>
+		<center>
+			<img src="ciudadano2.png"align="left"width="1500" height="700">
+		</center>
+		
+	</body>
+  </html>
