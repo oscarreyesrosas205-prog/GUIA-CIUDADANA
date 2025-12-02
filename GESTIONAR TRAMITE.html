@@ -1,0 +1,108 @@
+<!DOCTYPE html> <!--Doc en html-->
+<html lang="es"> <!--Doc en español-->
+<head>
+ <meta charset="UTF-8"> <!--codifica caracteres-->
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Ajusta el diseño a móviles-->
+ <title>GUIA DIGITAL CIUDADANA</title> <!--Título que aparece en la pestaña -->
+ <style>
+   body{
+     margin: 0; /* Elimina márgenes por defecto */
+     font-family: Arial, sans-serif; /* Fuente del texto */
+   }
+   /* ---- ESTILO DEL MENÚ PRINCIPAL ---- */
+   nav {
+   	background: #006600; /* Fondo gris oscuro */
+   }
+   nav ul {
+   	 list-style: none; /* Quita viñetas de la lista */
+   	 margin: 0; /* Elimina márgenes */
+   	 padding: 0; /* Elimina relleno */
+   	 display: flex; /* Coloca los <li> en linea (horizontal) */
+   }
+   nav ul li {
+   	 position: relative; /* Necesario para posicionar el submenú debajo */
+   }
+   nav ul li a {
+   	 display: block; /* Hace que todo el área sea clickeable */
+   	 padding: 15px 20px; /* Espaciado interno */
+   	 color: white; /* Texto blanco */
+   	 text-decoration: none; /Quita lo subrayado/
+   }
+   nav ul li a:hover {
+   	background: #006600; /* Cambia el fondo al pasar el raton */
+   }
+
+    /* ----Estilo del submenú----*/
+    nav ul li ul {
+    	display: none;       /*Ocultar el submenu por defecto */
+    	position: absolute;  /*Posiciona el submenu relativo al padre */
+    	top: 100%;           /Lo coloca justo debajo del elemento padre/
+    	left: 0;             /Alineado a la izquierda/
+    	background: #F8;    /Fondo de submenu/
+    	padding: 0;          /Sin espacio interno/
+    	min-width: 180px;        /Ancho minimo del submenu/
+    	}
+    		nav ul li ul li a {
+    			padding: 10px 15px; /* Espaciado interno en las opciones */
+    	}
+    	nav ul li ul li a:hover {
+    		background: #006600;    /*Color mas claro al pasar el raton */
+    	}
+
+    	/* ---- MOSTRAR EL SUBMENU ---- */
+    	nav ul li:hover > ul {
+    		display: block; /* Cuando paso el raton sobre el <li>, muestra el submenu*/
+    	}
+    </style>
+</head>
+<body>
+	<!--Menú principal-->
+	<nav>
+		<ul>
+
+			<li>
+			  <a href="https://gobmx.page/ActaNacimiento/">ACTA DE NACIMIENTO</a> <!--Flecha indicando submenú--> 
+			  <ul>
+			  	<li><a href="https://www.gob.mx/ActaNacimiento/folioSeguimiento/">FOLIO DE SEGUIMIENTO</a></li>
+			  	<li><a href="#">.......</a></li>
+			  	<li><a href="#">.......</a></li>
+			  </ul>
+			</li>
+			<li>
+			  <a href="https://www.gob.mx/curp/">CURP</a> <!--Flecha indicando submenú--> 
+			</li>
+			<li><a href="https://share.google/7ZWnSaU9mCdwy5HCt">LICENCIA DE CONDUCIR</a>
+				<ul>
+			  	<li><a href="https://smovilidad.edomex.gob.mx/citas_internet">AGENDAR CITAS</a></li>
+			  </ul>
+			  <li><a href="https://share.google/D3IEMuwBrTL2FHDaa">SAT</a>
+			   <ul>
+			   	
+			   	<li><a href="https://citas.sat.gob.mx/">AGENDAR CITAS</a></li>
+			   	<li><a href=" https://share.google/kg2M34giuzqjyeFCn">RFC</a></li>
+			   
+          <li><a href=" https://share.google/XewbSv71jWmGKOI32 ">CONSTANCIA DE SITUACION FISCAL</a></li>
+			  	<li><a href="https://share.google/cjTLGDloj8WC7sskx">DECLARACION PERSONAS FISICAS</a></li>
+			  
+   			  </ul>	
+			  <li><a href="https://share.google/bEhPbZOFD9ReqhYrG ">REGISTRO CIVIL</a>
+			  <li><a href="https://share.google/xf8e4fKcFUgO9Znsu"´>PASAPORTE</a>
+			  </li>
+			  <li>
+			  <a href="index1.php">DUDAS</a> 
+			  </li>
+				<li>
+					<p><form method="get" action="https://www.google.com/search" target="_blank">
+						<input type="search" name="q" placeholder="Introducir busqueda" autofocus required>
+						<input type="submit">
+					</form></p>
+				</li>
+			</ul>
+			</li>
+		</ul>
+	</nav>
+	<center>
+			<img src="tr2.png"align="left"width="2400" height="1000">
+		</center>
+</body>
+</html>
