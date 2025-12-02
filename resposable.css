@@ -1,0 +1,35 @@
+/* Ajustes para pantallas de teléfono */
+@media (max-width: 600px) {
+
+  body {
+    padding: 10px;
+    margin: 0;
+  }
+
+  header, nav, section, article, footer {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .contenedor {
+    display: block;
+  }
+
+  .columna {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  /* Botones más grandes */
+  button, .btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+  }
+}
