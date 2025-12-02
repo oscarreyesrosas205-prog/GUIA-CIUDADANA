@@ -1,0 +1,225 @@
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información de Pagos y Trámites</title>
+    <style>
+        /* ===== Estilo general ===== */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(180deg, #f9f9f7, #f0f0ee);
+            margin: 0;
+            padding: 0;
+            color: #2c2c2c;
+        }
+
+        /* ===== Encabezado ===== */
+        header {
+            background: linear-gradient(135deg, #1a1f2b, #2e4053); /* Azul noche */
+            color: #f8f6f1; /* Blanco marfil */
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+            letter-spacing: 1px;
+            font-weight: 600;
+            color: #f8f6f1;
+        }
+
+        /* ===== Contenedor principal ===== */
+        main {
+            max-width: 950px;
+            margin: 50px auto;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            padding: 40px 50px;
+            animation: fadeIn 1.2s ease;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        /* ===== Títulos ===== */
+        h2 {
+            color: #1a1f2b; /* Azul noche */
+            font-size: 22px;
+            border-left: 5px solid #c9a44c; /* Dorado suave */
+            padding-left: 12px;
+            margin-bottom: 14px;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #444;
+        }
+
+        /* ===== Listas ===== */
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            background: #fdfdfb;
+            margin: 10px 0;
+            padding: 14px 16px;
+            border-radius: 10px;
+            border-left: 4px solid #c9a44c; /* Dorado champagne */
+            transition: all 0.3s ease;
+        }
+
+        li:hover {
+            background: #f5f3ef;
+            transform: translateX(6px);
+        }
+
+        /* ===== Enlaces ===== */
+        a {
+            color: #2e4053;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #c9a44c;
+        }
+
+        /* ===== Botón de volver ===== */
+        .volver {
+            display: inline-block;
+            background: linear-gradient(135deg, #2e4053, #1a1f2b);
+            color: #f8f6f1;
+            padding: 12px 28px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .volver:hover {
+            background: linear-gradient(135deg, #1a1f2b, #000000);
+            transform: scale(1.05);
+        }
+
+        /* ===== Video ===== */
+        video {
+            border-radius: 15px;
+            margin-top: 15px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+        }
+
+        /* ===== Pie de página ===== */
+        footer {
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+            color: #444;
+            background: #f6f6f3;
+            border-top: 2px solid #c9a44c;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Información de Pagos y Trámites</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Bancos y puntos autorizados para realizar pagos</h2>
+            <p>En los siguientes bancos y centros puedes realizar pagos relacionados con servicios o trámites municipales:</p>
+            <ul>
+                <li>Banco Azteca — Horario: 8:30 a.m. a 4:00 p.m.</li>
+                <li>Banco Santander Horario: 9:00 a.m. a 4:00 p.m.</li>
+                <li>Citybanamex — Horario: 9:00 a.m. a 5:00 p.m.</li>
+                <li>BBVA — Horario: 9:00 a.m. a 4:30 p.m.</li>
+            </ul>
+            <center>
+                <video width="60%" controls>
+                    <source src="v4.mp4" type="video/mp4" class>
+                    Tu navegador no soporta video.
+                </video>
+            </center>
+        </section>
+
+        <section>
+            <h2>Trámites presenciales</h2>
+            <p>Si prefieres realizar tus trámites de manera presencial, acude a los siguientes lugares:</p>
+            <ul>
+                <li>Presidencia municipal — Horario: 9:00 a.m. a 4:00 p.m.</li>
+                <li>Registro civil — Horario: 9:00 a.m. a 4:00 p.m.</li>
+                <li>Oficinas del Ayuntamiento de Valle de Bravo — Horario: 9:00 a.m. a 5:00 p.m.</li>
+            </ul>
+            <center>
+                <video width="60%" controls>
+                    <source src="video3.mp4" type="video/mp4" class>
+                    Tu navegador no soporta video.
+                </video>
+            </center>
+        </section>
+
+        <section>
+            <h2>Pagos de servicios</h2>
+            <p>Consulta los horarios y tipos de servicios disponibles en las siguientes tiendas:</p>
+            <ul>
+                <li><a href="oxxo.html">Tiendas de pago de conveniencia acude "oxxo, fresco, bodega aurrera, otro oxxo" </a></li>
+            </ul>
+            </center>
+            <center>
+                <video width="60%" controls>
+                    <source src="vd5.mp4" type="video/mp4" class>
+                    Tu navegador no soporta video.
+                </video>
+            </center>
+        </section>
+
+        <section>
+            <h2>Dirección de bancos y puntos autorizados</h2>
+            <p>Ubica en el mapa los principales puntos de pago:</p>
+            <ul>
+                <li><a href="https://maps.app.goo.gl/Re7NxCXcRj5JLiRo6" target="_blank">Banco Azteca </a></li>
+                <li><a href="https://maps.app.goo.gl/ocbnGDP3v59dnjPg6" target="_blank">Banco HSBC</a></li>
+                <li><a href="https://maps.app.goo.gl/nroFnnePcgC5njKv6" target="_blank">Tesorería municipal</a></li>
+                <li><a href="https://maps.app.goo.gl/cBE9owLQ9aJrPw3JA" target="_blank">Centro de Servicios Administrativos</a></li>
+            </ul>
+            <center>
+                <video width="60%" controls>
+                    <source src="bb.mp4" type="video/mp4" class>
+                    Tu navegador no soporta video.
+                </video>
+            </center>
+        </section>
+
+        <center>
+            <a href="OSCAR_MENU2.PHP" class="volver">← Volver al menú principal</a>
+        </center>
+    </main>
+
+    <footer>
+        <p>Guía Digital Ciudadana - Valle de Bravo © 2025</p>
+    </footer>
+
+</body>
+</html>
+
