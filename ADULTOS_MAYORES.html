@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ADULTOS MAYORES</title>
+  <style>
+    :root{
+      --accent:#4A6FA5;      /* Azul gris elegante */
+      --soft-bg:#F2F4F7;     /* Gris claro minimalista */
+      --text:#1F2937;        /* Gris oscuro moderno */
+    }
+    body{
+      font-family:Arial, sans-serif;
+      margin:0;
+      background:var(--soft-bg);
+      color:var(--text);
+    }
+    .layout{
+      display:grid;
+      grid-template-columns:200px 1fr 180px;
+      gap:16px;
+      max-width:1100px;
+      margin:24px auto;
+      padding:0 16px;
+    }
+    @media (max-width:900px){
+      .layout{
+        grid-template-columns:1fr;
+      }
+    }
+    header{
+      grid-column:1/-1;
+      background:var(--accent);
+      color:#fff;
+      padding:12px;
+      border-radius:8px;
+      text-align:center;
+    }
+    aside, main{
+      background:#ffffff;
+      padding:16px;
+      border-radius:8px;
+      box-shadow:0 2px 6px rgba(0,0,0,0.08);
+    }
+    img,video{
+      max-width:100%;
+      border-radius:6px;
+      display:block;
+      margin:8px auto;
+    }
+    nav a{
+      display:block;
+      color:var(--accent);
+      text-decoration:none;
+      margin:6px 0;
+      font-weight:600;
+    }
+    .btn{
+      display:inline-block;
+      padding:8px 12px;
+      background:var(--accent);
+      color:#fff;
+      text-decoration:none;
+      border-radius:6px;
+      margin-top:8px;
+      text-align:center;
+    }
+    footer{
+      grid-column:1/-1;
+      text-align:center;
+      margin-top:12px;
+      color:#374151;
+      font-size:13px;
+    }
+
+    /* TABLA ESTÉTICA */
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:12px;
+      background:#E2E8F0;
+    }
+    th,td{
+      padding:10px;
+      border:1px solid #CBD5E1;
+      text-align:center;
+    }
+    th{
+      background:#4A6FA5;
+      color:white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="layout">
+    <header>
+      <h1>BIENESTAR, SALUD Y CUIDADOS DEL ADULTO MAYOR</h1>
+    </header>
+
+    <!-- BARRA IZQUIERDA -->
+    <aside aria-label="Barra lateral izquierda">
+      <h3>Menú</h3>
+      <nav>
+        <a href="#importancia">Importancia</a>
+        <a href="#imagen">Imagen</a>
+        <a href="#video">Video</a>
+        <a href="#descarga">Descarga</a>
+      </nav>
+
+      <hr>
+
+      <p style="font-size:13px;color:#1F2937;text-align:center;margin-top:6px;">
+        <strong>Página 1 adicional</strong>
+      </p>
+
+      <div style="text-align:center;">
+        <a class="btn" href="PAGINA.1.html">Ir a la pagina 1</a>
+      </div>
+
+      <img src="ABUELOO.jpg" alt="Adultos mayores felices" width="250">
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+      <section id="importancia">
+        <h2>El papel fundamental del adulto mayor en la sociedad</h2>
+        <p>
+          El envejecimiento es una etapa natural de la vida que debe vivirse con dignidad, seguridad y salud.  
+          Los adultos mayores aportan experiencia, valores y conocimientos que fortalecen a la sociedad y a las familias.  
+          Garantizar su bienestar implica promover una vida activa, apoyo emocional y acceso a servicios de salud.
+        </p>
+
+        <h3>Aspectos importantes del cuidado</h3>
+        <ul>
+          <li><strong>Salud física:</strong> chequeos médicos periódicos, control de medicamentos y actividad física moderada.</li>
+          <li><strong>Salud mental:</strong> actividades cognitivas, socialización y prevención de la depresión o aislamiento.</li>
+          <li><strong>Alimentación adecuada:</strong> dietas ricas en fibra, vitaminas y baja en azúcares.</li>
+          <li><strong>Prevención de caídas:</strong> revisar el hogar, iluminación adecuada y uso de calzado seguro.</li>
+        </ul>
+
+        <h3>Datos importantes</h3>
+
+        <table>
+          <tr>
+            <th>Dato</th>
+            <th>Información</th>
+          </tr>
+          <tr>
+            <td>Esperanza de vida promedio</td>
+            <td>75 a 82 años (según región)</td>
+          </tr>
+          <tr>
+            <td>Principales riesgos</td>
+            <td>Caídas, enfermedades crónicas, aislamiento social</td>
+          </tr>
+          <tr>
+            <td>Actividades recomendadas</td>
+            <td>Ejercicio ligero, estimulación cognitiva, convivencia familiar</td>
+          </tr>
+        </table>
+
+      </section>
+
+      <section id="imagen">
+        <h2>Imagen relacionada</h2>
+        <img src="ABUELO.jpg" alt="BIENESTAR DE LOS ADULTOS MAYORES">
+      </section>
+
+      <section id="video">
+        <h2>Video sobre el cuidado del adulto mayor</h2>
+        <video controls>
+          <source src="VIEJITOS.mp4" type="video/mp4">
+          Tu navegador no soporta el elemento de video.
+        </video>
+      </section>
+
+      <section id="descarga">
+        <h2>Descargar información</h2>
+        <a class="btn" href="CUIDADO.pdf" download="CUIDADO.pdf">
+          Descargar archivo
+        </a>
+      </section>
+
+    </main>
+
+    <!-- BARRA DERECHA -->
+    <aside aria-label="Barra lateral derecha">
+      <h3>¿Qué es la tercera edad?</h3>
+      <p style="font-size:14px;">
+        La tercera edad comprende a las personas mayores de 60 años y representa una etapa donde el cuidado integral es esencial.  
+        El enfoque principal es preservar su autonomía, bienestar emocional y participación en actividades que fortalezcan su autoestima y salud.
+      </p>
+
+      <hr>
+
+      <p style="font-size:13px;color:#1F2937;text-align:center;">
+        <strong>Página 2 adicional</strong>
+      </p>
+
+      <div style="text-align:center;">
+        <a class="btn" href="PAGINA.2.html">Ir a la página 2</a>
+      </div>
+
+    </aside>
+
+    <footer>
+      <p>© 2025 Proyecto sobre Adultos Mayores</p>
+    </footer>
+  </div>
+
+</body>
+</html>

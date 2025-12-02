@@ -11,7 +11,7 @@
    }
    /* ---- ESTILO DEL MENÚ PRINCIPAL ---- */
    nav {
-   	background: #3498DB; /* Fondo gris oscuro */
+   	background: #333; /* Fondo gris oscuro */
    }
    nav ul {
    	 list-style: none; /* Quita viñetas de la lista */
@@ -29,7 +29,7 @@
    	 text-decoration: none; /*Quita lo subrayado*/
    }
    nav ul li a:hover {
-   	background: #FFC300; /* Cambia el fondo al pasar el raton */
+   	background: #444; /* Cambia el fondo al pasar el raton */
    }
 
     /* ----Estilo del submenú----*/
@@ -38,15 +38,15 @@
     	position: absolute;  /*Posiciona el submenu relativo al padre */
     	top: 100%;           /*Lo coloca justo debajo del elemento padre*/
     	left: 0;             /*Alineado a la izquierda*/
-    	background: gray;    /*Fondo de submenu*/
+    	background: #F8;    /*Fondo de submenu*/
     	padding: 0;          /*Sin espacio interno*/
-    	min-width: 300px;        /*Ancho minimo del submenu*/
+    	min-width: 180px;        /*Ancho minimo del submenu*/
     	}
     		nav ul li ul li a {
     			padding: 10px 15px; /* Espaciado interno en las opciones */
     	}
     	nav ul li ul li a:hover {
-    		background: #FF5733;    /*Color mas claro al pasar el raton */
+    		background: #555;    /*Color mas claro al pasar el raton */
     	}
 
     	/* ---- MOSTRAR EL SUBMENU ---- */
@@ -60,46 +60,33 @@
 	<nav>
 		<ul>
 			<!--Elemento simple sin submenú-->
-			
-<ul>
-				<li>
-					<p><form method="get" action="https://www.google.com/search" target="_blank">
-						<input type="search" name="q" placeholder="Introducir busqueda" autofocus required>
-						<input type="submit">
-					</form></p>
-				</li>
-			</ul>
+			<li><a href="#">INICIO</a></li>
+
 			<!--Elemento con submenú-->
 			<li>
-			  <p><a href="ciudadano.html">CIUDADANO</a></p> <!--Flecha indicando submenú--> 
-			  
+			  <a href="#">MENU 1</a> <!--Flecha indicando submenú--> 
+			  <ul>
+			  	<li><a href="#">.......</a></li>
+			  	<li><a href="#">.......</a></li>
+			  	<li><a href="#">.......</a></li>
+			  </ul>
 			</li>
 			<li>
-			  <p><a href="tramite.html">TRAMITE</a></p> <!--Flecha indicando submenú--> 
+			  <a href="#">MENU 2</a> <!--Flecha indicando submenú--> 
 			  <ul>
-       <li> <p><a href="tramites.html">ADMINISTRATIVOS</a></p> </li> <!--Flecha indicando submenú--> 
-			 <li> <p><a href="index2.php">VISITANTES</a></p> </li>
-		  </ul>
+			  	<li><a href="#">.......</a></li>
+			  	<li><a href="#">.......</a></li>
+			  	<li><a href="#">.......</a></li>
+			  </ul>
 			</li>
-			<li> 
-				<p><a href="solicitud.html">SOLICITUD</a></p>
-		
-			</li>
-			<li>
-			  <p><a href="pago.html">PAGO</a></p> <!--Flecha indicando submenú--> 
-			  <ul>
-       <li> <p><a href="pago.html">SERVICIOS Y DERECHOS</a></p> </li> 
-     </ul>
-			</li>
-			 <li> 
-		  <p><a href="documentos.html">DOCUMENTO</a></p> <!--Flecha indicando submenú-->
-			 <ul>
-       <li> <p><a href="galeria.html">GALERIAS</a></p> </li> <!--Flecha indicando submenú--> 
-			 <li> <p><a href="#">PROGRAMACION</a></p> </li>
-       <li> <p><a href="#">MARKETING</a></p> </li>
-		  </ul>
-		   </li>
+			<li><a href="#">CONTACTO</a></li>
 		</ul>
 	</nav>
 </body>
 </html>
+
+
+
+
+    	
+

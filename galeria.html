@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantel Valle de Bravo</title>
+    <link rel="stylesheet" href="principal.css">
+      <link rel="icon" href="img/unnamed-removebg-preview.png" type="png">
+    <a href="OPDAPAS.html"></a>
+ 
+    <style>
+   
+        .fondo-valle{
+            background-image: linear-gradient(to top, #0593bb 20%, #0e26ae 80%);
+            background-size: cover;
+            background-position: center center;
+            width: 100%;
+            height: 80vh;
+            background-attachment: fixed;
+          }
+        .contenido-fondo-valle{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; 
+          }
+      @keyframes move_wave {
+          0% {
+              transform: translateX(0) translateZ(0) scaleY(1)
+          }
+          50% {
+              transform: translateX(-25%) translateZ(0) scaleY(0.55)
+          }
+          100% {
+              transform: translateX(-50%) translateZ(0) scaleY(1)
+          }
+      }
+      .waveWrapper {
+          overflow: hidden;
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          top: 0;
+          margin: auto;
+      }
+      .waveWrapperInner {
+          position: absolute;
+          width: 100%;
+          overflow: hidden;
+          height: 70%;
+    
+          
+      }
+      .bgTop {
+          z-index: 15;
+          opacity: 0.5;
+      }
+      .bgMiddle {
+          z-index: 10;
+          opacity: 0.75;
+      }
+      .bgBottom {
+          z-index: 5;
+      }
+      .wave {
+          position: absolute;
+          left: 0;
+          width: 200%;
+          height: 100%;
+          background-repeat: repeat no-repeat;
+          background-position: 0 bottom;
+          transform-origin: center bottom;
+      }
+      .waveTop {
+          background-size: 50% 100px;
+      }
+      .waveAnimation .waveTop {
+        animation: move-wave 3s;
+         -webkit-animation: move-wave 3s;
+         -webkit-animation-delay: 1s;
+         animation-delay: 1s;
+      }
+      .waveMiddle {
+          background-size: 50% 120px;
+      }
+      .waveAnimation .waveMiddle {
+          animation: move_wave 10s linear infinite;
+      }
+      .waveBottom {
+          background-size: 50% 100px;
+      }
+      .waveAnimation .waveBottom {
+          animation: move_wave 15s linear infinite;
+      }
+      </style>
+      
+      
+        <script>
+        window.console = window.console || function(t) {};
+      </script>
+</head>
+<body>
+    <div class="header">
+
+        <!--Content before waves-->
+        <div class="inner-header flex">
+            <div class="logo">
+            </div>
+        <h1> <img src="cd3.png" style="width: 900px;"><br>
+        <img src="cl2.png" style="width: 600px;" ></h1>
+        </div>
+        
+        <!--Waves Container-->
+        <div>
+        <svg class="agua" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+        </svg>
+        </div>
+        </div>
+   
+
+
+        
+        <div id="gallery1" class="gallery2">
+            <section >
+    
+                <h2>TU     IDENTIDAD,     TUS    DOCUMENTOS</h2>
+                <div class="content-all">
+                    <div class="content-carrousel">
+                        <figure><img src="acta.jpg"></figure>
+                        <figure><img src="curp.jpg"></figure>
+                        <figure><img src="ine.jpg"></figure>
+                        <figure><img src="mex.jpeg"></figure>
+                        <figure><img src="lic.jpg" ></figure>
+                        <figure><img src="vis.jpg"></figure>
+                        <figure><img src="acta.jpg"></figure>
+                        <figure><img src="curp.jpg"></figure>
+                    </div>
+                </div>
+                
+            </section>
+            </div>
+       
+    
+    <div class="separador"></div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
