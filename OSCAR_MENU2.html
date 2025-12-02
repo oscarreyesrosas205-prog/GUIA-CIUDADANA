@@ -1,0 +1,117 @@
+<!DOCTYPE html> <!--Doc en html-->
+<html lang="es"> <!--Doc en español-->
+<head>
+ <meta charset="UTF-8"> <!--codifica caracteres-->
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <script src="oscar.js"></script> <!--Ajusta el diseño a móviles-->
+ <title>GUIA DIGITAL CIUDADANA</title> <!--Título que aparece en la pestaña -->
+ <style>
+   body{
+     margin: 0; /* Elimina márgenes por defecto */
+     font-family: Arial, sans-serif; /* Fuente del texto */
+   }
+   /* ---- ESTILO DEL MENÚ PRINCIPAL ---- */
+   nav {
+   	background: #3498DB; /* Fondo gris oscuro */
+   }
+   nav ul {
+   	 list-style: none; /* Quita viñetas de la lista */
+   	 margin: 0; /* Elimina márgenes */
+   	 padding: 0; /* Elimina relleno */
+   	 display: flex; /* Coloca los <li> en linea (horizontal) */
+   }
+   nav ul li {
+   	 position: relative; /* Necesario para posicionar el submenú debajo */
+   }
+   nav ul li a {
+   	 display: block; /* Hace que todo el área sea clickeable */
+   	 padding: 15px 20px; /* Espaciado interno */
+   	 color: white; /* Texto blanco */
+   	 text-decoration: none; /*Quita lo subrayado*/
+   }
+   nav ul li a:hover {
+   	background: #FFC300; /* Cambia el fondo al pasar el raton */
+   }
+
+    /* ----Estilo del submenú----*/
+    nav ul li ul {
+    	display: none;       /*Ocultar el submenu por defecto */
+    	position: absolute;  /*Posiciona el submenu relativo al padre */
+    	top: 100%;           /*Lo coloca justo debajo del elemento padre*/
+    	left: 0;             /*Alineado a la izquierda*/
+    	background: gray;    /*Fondo de submenu*/
+    	padding: 0;          /*Sin espacio interno*/
+    	min-width: 300px;        /*Ancho minimo del submenu*/
+    	}
+    		nav ul li ul li a {
+    			padding: 10px 15px; /* Espaciado interno en las opciones */
+    	}
+    	nav ul li ul li a:hover {
+    		background: #FF5733;    /*Color mas claro al pasar el raton */
+    	}
+
+    	/* ---- MOSTRAR EL SUBMENU ---- */
+    	nav ul li:hover > ul {
+    		display: block; /* Cuando paso el raton sobre el <li>, muestra el submenu*/
+    	}
+    </style>
+</head>
+<body>
+	<!--Menú principal-->
+	<nav>
+		<ul>
+			<!--Elemento simple sin submenú-->
+			<li>
+				    <img src="cecytem2.png" width="80" height="110" align="center">
+			</li>
+			
+
+			<!--Elemento con submenú-->
+			<li>
+			  <p><a href="ciudadano.html">CIUDADANO</a></p> <!--Flecha indicando submenú--> 
+			  
+			</li>
+			<li>
+			  <p><a href="tramite.html">TRAMITE</a></p> <!--Flecha indicando submenú--> 
+			  <ul>
+       <li> <p><a href="tramites.html">ADMINISTRATIVOS</a></p> </li> <!--Flecha indicando submenú--> 
+			 <li> <p><a href="GESTIONAR TRAMITE.html">GESTION DE TRAMITES</a></p> </li>
+		  </ul>
+			</li>
+			<li> 
+				<p><a href="solicitud.html">SOLICITUD</a></p>
+		
+			</li>
+			<li>
+			  <p><a href="pago.html">PAGO</a></p> <!--Flecha indicando submenú--> 
+			  <ul>
+       <li> <p><a href="pago.html">SERVICIOS Y DERECHOS</a></p> </li> 
+     </ul>
+			</li>
+			 <li> 
+		  <p><a href="documentos.html">DOCUMENTO</a></p> <!--Flecha indicando submenú-->
+			 <ul>
+       <li> <p><a href="galeria.html">GALERIAS</a></p> </li> <!--Flecha indicando submenú--> 
+			 <li> <p><a href="#">----</a></p> </li>
+       <li> <p><a href="#">----</a></p> </li>
+		  </ul>
+		   </li>
+		   <li>
+			  <p><a href="#">VISITANTES</a></p> <!--Flecha indicando submenú--> 
+			  <ul>
+       <li> <p><a href="index2.php">REGISTRO DE VISITAS</a></p> </li>
+       
+     </ul>
+		</nav>
+		<center>
+			<img src="ciudadano2.png"align="left"width="1525" height="1500">
+			<li>
+				<a href="index1.php">
+		<img src="interrogacion.png" width="80" height="110">
+    </li>
+		</center>
+
+		 
+		
+	</body>
+  </html>
